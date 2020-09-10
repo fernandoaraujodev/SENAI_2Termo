@@ -5727,11 +5727,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pc\\Desktop\\SENAI_2termo\\Api_ORM\\Api_ORM.csproj",
+      "projectUniqueName": "C:\\Users\\pc\\Desktop\\SENAI_2termo\\Sprint2_BackEnd-API\\Api_ORM\\Api_ORM.csproj",
       "projectName": "Api_ORM",
-      "projectPath": "C:\\Users\\pc\\Desktop\\SENAI_2termo\\Api_ORM\\Api_ORM.csproj",
+      "projectPath": "C:\\Users\\pc\\Desktop\\SENAI_2termo\\Sprint2_BackEnd-API\\Api_ORM\\Api_ORM.csproj",
       "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pc\\Desktop\\SENAI_2termo\\Api_ORM\\obj\\",
+      "outputPath": "C:\\Users\\pc\\Desktop\\SENAI_2termo\\Sprint2_BackEnd-API\\Api_ORM\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
