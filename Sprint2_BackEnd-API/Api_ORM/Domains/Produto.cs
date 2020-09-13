@@ -6,19 +6,10 @@ using System.Threading.Tasks;
 
 namespace Api_ORM.Domains
 {
-    public class Produto
+    public class Produto : BaseDomain
     {
-        /// <summary>
-        /// Define a classe Produto
-        /// </summary>
-        [Key]
-        public Guid Id { get; set; }
         public string Nome { get; set; }
         public float Preco { get; set; }
 
-        public Produto()
-        {
-            Id = Guid.NewGuid();
-        }
     }
 }

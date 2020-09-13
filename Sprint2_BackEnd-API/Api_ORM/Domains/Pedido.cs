@@ -6,19 +6,9 @@ using System.Threading.Tasks;
 
 namespace Api_ORM.Domains
 {
-    public class Pedido
+    public class Pedido : BaseDomain
     {
-        /// <summary>
-        /// Define a classe Produto
-        /// </summary>
-        [Key]
-        public Guid Id { get; set; }
         public string Status { get; set; }
         public DateTime OrderDate { get; set; }
-
-        public Pedido()
-        {
-            Id = Guid.NewGuid();
-        }
     }
 }

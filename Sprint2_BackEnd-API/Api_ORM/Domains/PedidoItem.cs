@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Api_ORM.Domains
 {
-    public class PedidoItem
+    public class PedidoItem : BaseDomain
     {
         [Key]
         public Guid Id { get; set; }
@@ -22,9 +22,5 @@ namespace Api_ORM.Domains
         [Required]
         public int Quantidade { get; set; }
 
-        public PedidoItem()
-        {
-            Id = Guid.NewGuid();
-        }
     }
 }
