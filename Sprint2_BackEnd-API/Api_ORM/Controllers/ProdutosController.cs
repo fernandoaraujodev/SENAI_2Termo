@@ -35,12 +35,18 @@ namespace Api_ORM.Controllers
                     return NoContent();
 
                 //caso exista retorna Ok
-                return Ok(produtos);
+                return Ok(new {
+                    totalCount = produtos.Count,
+                    data = produtos
+                });
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 // caso ocorra algum erro retorna BadRequest e a error message
-                return BadRequest(ex.Message);
+                return BadRequest(new {
+                    statusCode = 400,
+                    error = "Ocorreu um erro no endpoint GET/produtos, envie um email para nosso time de soluções"
+                });
             }
         }
 
@@ -85,7 +91,6 @@ namespace Api_ORM.Controllers
         {
             try
             {
-                produto.Id = id;
                 _produtoRepository.Editar(produto);
 
                 return Ok(produto);

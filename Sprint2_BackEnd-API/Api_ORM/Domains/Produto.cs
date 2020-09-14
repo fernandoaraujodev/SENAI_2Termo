@@ -10,6 +10,8 @@ namespace Api_ORM.Domains
     {
         public string Nome { get; set; }
         public float Preco { get; set; }
+        //relacionamento com a tabela pedidoitem 1 pra N
+        public List<PedidoItem> PedidosItens { get; set; }
 
     }
 }

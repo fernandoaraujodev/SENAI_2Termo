@@ -111,8 +111,6 @@ C:\Users\pc\Desktop\SENAI_2termo\Sprint2_BackEnd-API\Api_ORM\bin\Debug\netcoreap
 C:\Users\pc\Desktop\SENAI_2termo\Sprint2_BackEnd-API\Api_ORM\obj\Debug\netcoreapp3.1\Api_ORM.csprojAssemblyReference.cache
 C:\Users\pc\Desktop\SENAI_2termo\Sprint2_BackEnd-API\Api_ORM\obj\Debug\netcoreapp3.1\Api_ORM.AssemblyInfoInputs.cache
 C:\Users\pc\Desktop\SENAI_2termo\Sprint2_BackEnd-API\Api_ORM\obj\Debug\netcoreapp3.1\Api_ORM.AssemblyInfo.cs
-C:\Users\pc\Desktop\SENAI_2termo\Sprint2_BackEnd-API\Api_ORM\obj\Debug\netcoreapp3.1\Api_ORM.csproj.CoreCompileInputs.cache
-C:\Users\pc\Desktop\SENAI_2termo\Sprint2_BackEnd-API\Api_ORM\obj\Debug\netcoreapp3.1\Api_ORM.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\pc\Desktop\SENAI_2termo\Sprint2_BackEnd-API\Api_ORM\obj\Debug\netcoreapp3.1\Api_ORM.RazorTargetAssemblyInfo.cache
 C:\Users\pc\Desktop\SENAI_2termo\Sprint2_BackEnd-API\Api_ORM\obj\Debug\netcoreapp3.1\Api_ORM.csproj.CopyComplete
 C:\Users\pc\Desktop\SENAI_2termo\Sprint2_BackEnd-API\Api_ORM\obj\Debug\netcoreapp3.1\staticwebassets\Api_ORM.StaticWebAssets.Manifest.cache

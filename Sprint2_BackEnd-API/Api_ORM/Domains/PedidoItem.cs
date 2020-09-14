@@ -9,8 +9,6 @@ namespace Api_ORM.Domains
 {
     public class PedidoItem : BaseDomain
     {
-        [Key]
-        public Guid Id { get; set; }
         public Guid IdPedido { get; set; }
         [ForeignKey("IdPedido")]
         public Pedido Pedido { get; set; }

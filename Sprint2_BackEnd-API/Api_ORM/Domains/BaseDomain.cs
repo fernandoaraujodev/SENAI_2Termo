@@ -12,7 +12,7 @@ namespace Api_ORM.Domains
         /// Define a classe Produto
         /// </summary>
         [Key]
-        public Guid Id { get; set; }
+        public Guid Id { get; private set; }
 
         public BaseDomain()
         {
