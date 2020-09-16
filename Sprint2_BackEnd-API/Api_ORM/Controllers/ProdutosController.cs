@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Api_ORM.Domains;
 using Api_ORM.Interfaces;
 using Api_ORM.Repositories;
+using Api_ORM.Utils;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -69,11 +71,20 @@ namespace Api_ORM.Controllers
             }
         }
 
+        // formform = recebe os dados do produto via form-data
         [HttpPost]
-        public IActionResult Post (Produto produto)
+        public IActionResult Post ([FromForm]Produto produto)
         {
             try
             {
+                //verifico se foi enviado um arquivo com a imagem
+                if(produto.Imagem != null)
+                {
+                    var urlImagem = Upload.Local(produto.Imagem);   
+
+                    produto.UrlImagem = urlImagem;
+                }
+
                 //adiciona um produto
                 _produtoRepository.Adicionar(produto);
 
