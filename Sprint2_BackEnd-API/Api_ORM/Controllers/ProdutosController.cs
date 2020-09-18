@@ -23,6 +23,10 @@ namespace Api_ORM.Controllers
             _produtoRepository = new ProdutoRepository();
         }
 
+        /// <summary>
+        /// mostra todos os produtos cadastrados
+        /// </summary>
+        /// <returns>Uma lista com tos os produtos</returns>
         [HttpGet]
         public IActionResult Get()
         {
@@ -53,6 +57,11 @@ namespace Api_ORM.Controllers
         }
 
         // GET api/
+        /// <summary>
+        /// mostra um unico produto
+        /// </summary>
+        /// <param name="id">id do produto</param>
+        /// <returns>um produto</returns>
         [HttpGet("{id}")]
         public IActionResult Get(Guid id)
         {
@@ -72,6 +81,11 @@ namespace Api_ORM.Controllers
         }
 
         // formform = recebe os dados do produto via form-data
+        /// <summary>
+        /// cadastra um novo produto
+        /// </summary>
+        /// <param name="produto">objeto completo de Produto</param>
+        /// <returns>produto cadastrado</returns>
         [HttpPost]
         public IActionResult Post ([FromForm]Produto produto)
         {
@@ -97,6 +111,12 @@ namespace Api_ORM.Controllers
             }
         }
 
+        /// <summary>
+        /// altera determinado produto
+        /// </summary>
+        /// <param name="id">id do produto</param>
+        /// <param name="produto">objeto Produto com as suas alterações</param>
+        /// <returns>objeto Produto com as suas alterações</returns>
         [HttpPut("{id}")]
         public IActionResult Put(Guid id, Produto produto)
         {
@@ -113,6 +133,11 @@ namespace Api_ORM.Controllers
 
         }
 
+        /// <summary>
+        /// exclui um produto
+        /// </summary>
+        /// <param name="id">id produto</param>
+        /// <returns>id do produto excluido</returns>
         [HttpDelete("{id}")]
         public IActionResult Delete(Guid id)
         {
