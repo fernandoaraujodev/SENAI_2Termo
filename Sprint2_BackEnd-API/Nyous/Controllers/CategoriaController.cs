@@ -11,7 +11,7 @@ using Nyous.Domains;
 
 namespace Nyous.Controllers
 {
-    [Authorize]
+    //[Authorize] key para dev
     [Route("api/[controller]")]
     [ApiController]
     public class CategoriaController : ControllerBase
