@@ -5,7 +5,7 @@ import Rodape from '../../components/rodape';
 import {Container, Form, Button} from 'react-bootstrap';
 import logo from '../../assets/img/Logo.svg';
 import './index.css';
-import jwt_decode from 'jwt-decode';
+import * as jwt_decode from 'jwt-decode';
 
 
 const Login = () => {
@@ -42,21 +42,17 @@ const Login = () => {
             console.log(response);
         })
         .then(data => {
-            localStorage.setItem('tokenNyous', data.token);
-
-            let usuario = jwt_decode(data.token);
-
-            if(usuario.role === 'Admin'){
+            
+            localStorage.setItem('token-nyous-tarde', data.token1);
+            
+            let usuario = jwt_decode(data.token1);
+            
+            if(usuario.role === 'Admin')
                 history.push('/admin/dashboard');
-            }else{
+            else
                 history.push('/eventos');
-            }
-
-            history.push('/eventos');
         })
         .catch(err => console.error(err));
-
-        console.log(`${email} - ${senha}`);
     }
 
     return (

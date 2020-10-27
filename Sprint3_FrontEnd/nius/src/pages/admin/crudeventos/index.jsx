@@ -1,16 +1,15 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Menu from '../../../components/menu';
 import Rodape from '../../../components/rodape';
 
-const DashBoard = () => {
-
+const CrudEventos = () => {
     return(
         <div>
             <Menu />
-            <h1>DashBoard</h1>
+            <h1>CrudEventos</h1>
             <Rodape />
         </div>
     )
 }
 
-export default DashBoard
+export default CrudEventos
